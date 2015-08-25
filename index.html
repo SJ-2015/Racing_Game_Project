@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rrrracing Game</title>
+  <title>Battle of the Forest</title>
   <meta charset="utf-8" />
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,9 +11,75 @@
 </head>
 <body>
   <!-- HTML Body -->
-  <h1>Rrrracing Game</h1>
-  <img src="http://www.cs.utah.edu/~gk/atwork/img/hevequip2.gif" alt="under construction"></img>
+  <h1 class="gameName">Battle of the Forest</h1>
+
+  <h2 class="playerInfo">Who will be playing today? Select Kirby or Pikachu</h2>
+
+
+  <!--Selector Player Names -->
+  <div class="two-col">
+      <div class="col1">
+          <label for="field1">Player One:</label>
+          <input id="field1" name="Player 1" type="text" value="Enter Kirby or Pikachu">
+          <input type="button" value="Send to Road" onclick="foo(this.value)"/>
+      </div>
+  <div class="col2">
+          <label for="field2">Player Two:</label>
+          <input id="field2" name="Player 2" type="text" value="Enter Kirby or Pikachu">
+          <input type="button" value="Send to Road" onclick="foo(this.value)"/>
+      </div>
+  </div>
+
   <!-- Game Board Here -->
+  
+  <br>
+  <br>
+  <div id="Backgroundcontainer">
+    <div id="forest_storyBackground">
+
+        <div class='track trackPlayer1'>
+          <h3 class = 'trackLabel'> Player 1 Track </h3>
+          <div class='grid'>
+            <table>
+              <tr>
+                <td class="player1Border kirbyPosition"> </td>
+                <td class="player1Border"> </td>
+                <td class="player1Border"> </td>
+                <td class="player1Border"> </td>
+                <td class="player1Border"> </td>
+                <td class="player1Border"> </td>
+                <td class="player1Border"> </td>
+                <td class="player1Border"> </td>
+                <td class="player1Border"> </td>
+            </table>
+          </div> <!--end of grid div-->
+       </div>
+
+        <div class='track trackPlayer2'>
+        <br>
+        <h3 class = 'trackLabel'> Player 2 Track </h3>
+        <div class='grid'>
+          <table>
+            <tr>
+              <td class="player2Border pikachuPosition"> </td>
+              <td class="player2Border"> </td>
+              <td class="player2Border"> </td>
+              <td class="player2Border"> </td>
+              <td class="player2Border"> </td>
+              <td class="player2Border"> </td>
+              <td class="player2Border"> </td>
+              <td class="player2Border"> </td>
+              <td class="player2Border"> </td>
+          </table>
+        </div> <!--end of grid div-->
+      </div>
+    
+
+
+
+
+    </div>
+  </div>
   <!-- Reset button -->
 </body>
 </html>

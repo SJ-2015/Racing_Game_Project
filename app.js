@@ -17,9 +17,16 @@ Game.prototype.init = function() {
 };
 
 // A starter Player constructor.
-function Player(team) {
-  //this.name = ...
-  //this.position = ...
+function Player(name, avatar) {
+  this.name = name;
+  if ((avatar='Kirby')||(avatar='Pikachu')){
+      this.avator=avatar
+  } else {
+      alert("INVALID CHARACTER!");
+  };
+  this.render = function(){
+    
+  };
 };
 
 // Remember: prototypes are shared functions between all game instances

@@ -1,1 +1,110 @@
-/* Style Sheet */
+html{
+	background-color: #ADFF2F;
+}
+
+
+.gameName{
+	text-align: center;
+}
+
+
+#forest_storyBackground {
+	position: absolute;
+    top: 200px;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+
+	background-image: url("Forest_Background.png");
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#NightTime_storyBackground {
+	position: absolute;
+    top: 200px;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+
+	background-image: url("NightTime_Background.jpg");
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.playerInfo {
+  border: 3px solid #000000;
+  column-count:3;
+  columns:1;
+  text-align: center;
+}
+
+/*input box */
+.two-col {
+    overflow: hidden;/* Makes this div contain its floats */
+}
+
+.two-col .col1,
+.two-col .col2 {
+    width 49%;
+}
+
+.two-col .col1 {
+    float: left;
+}
+
+.two-col .col2 {
+    float: right;
+}
+
+.two-col label {
+    display: block;
+}
+
+/*tracks */
+.track {
+	max-width:1000px;
+	margin:10px auto;
+}
+
+.grid {
+  float: center;
+  width: 80%;
+  margin-left: 5%;
+}
+
+table {
+  margin: auto;
+}
+
+table tr td {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border: 2px solid #ccc;
+}
+
+.trackLabel {
+	font-size: medium
+}
+
+.player1Border {
+  border-color: transparent;
+}
+
+.player2Border {
+  border-color: transparent;
+}
+
+.kirbyPosition {
+  background-image: url(Kirby.gif );
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pikachuPosition {
+  background-image: url(pikachu.gif );
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
