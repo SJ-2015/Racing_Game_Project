@@ -97,9 +97,10 @@ table tr td {
 }
 
 .kirbyPosition {
-  background-image: url(Kirby.gif );
+  background-image: url(whiteKirby.gif );
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .pikachuPosition {
