@@ -96,16 +96,35 @@ table tr td {
   border-color: transparent;
 }
 
-.kirbyPosition {
+.KirbyPosition {
   background-image: url(whiteKirby.gif );
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
 }
 
-.pikachuPosition {
+.PikachuPosition {
   background-image: url(pikachu.gif );
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* restart botton */
+#restart {
+  position: absolute;
+    top: 510px;
+    left: 500px;
+    right: 0;
+    bottom: 0;
+    color: blue;
+    display: inline-block;
+    margin: 0px 0 0;
+    padding: 0px 0px;
+    font-size: 30px;
+    font-family: "Bitter",serif;
+    line-height: 0;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
 }
 

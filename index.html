@@ -7,33 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="main.css">
   <!-- Hey, where's the jquery? -->
+  <script src="http://code.jquery.com/jquery-2.1.4.js"></script> 
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
   <!-- HTML Body -->
   <h1 class="gameName">Battle of the Forest</h1>
 
-  <h2 class="playerInfo">Who will be playing today? Select Kirby or Pikachu</h2>
-
+  <h2 class="playerInfo">Press "f" to move Player1  &nbsp &nbsp &nbsp  Press "l" to move Player2</h2>
 
   <!--Selector Player Names -->
   <div class="two-col">
       <div class="col1">
           <label for="field1">Player One:</label>
-          <input id="field1" name="Player 1" type="text" value="Enter Kirby or Pikachu">
-          <input type="button" value="Send to Race" onclick="foo(this.value)"/>
+          <input id="field1" name="Player 1" type="text" value="Enter Kirby or Pikachu (Case Sensitive)">
+          <input type="button" value="Send to Race" id="sendPlayer1"/>
       </div>
   <div class="col2">
           <label for="field2">Player Two:</label>
-          <input id="field2" name="Player 2" type="text" value="Enter Kirby or Pikachu">
-          <input type="button" value="Send to Race" onclick="foo(this.value)"/>
+          <input id="field2" name="Player 2" type="text" value="Enter Kirby or Pikachu (Case Sensitive)">
+          <input type="button" value="Send to Race" id="sendPlayer2"/>
       </div>
   </div>
 
   <!-- Game Board Here -->
   
-  <br>
-  <br>
   <div id="Backgroundcontainer">
     <div id="forest_storyBackground">
 
@@ -45,7 +43,7 @@
 
             <table>
               <tr>
-                <td class="player1Border kirbyPosition"> </td>
+                <td class="player1Border"> </td>
                 <td class="player1Border"> </td>
                 <td class="player1Border"> </td>
                 <td class="player1Border"> </td>
@@ -66,7 +64,7 @@
             <br> 
           <table>
             <tr>
-              <td class="player2Border pikachuPosition"> </td>
+              <td class="player2Border"> </td>
               <td class="player2Border"> </td>
               <td class="player2Border"> </td>
               <td class="player2Border"> </td>
@@ -77,14 +75,20 @@
               <td class="player2Border"> </td>
           </table>
         </div> <!--end of grid div-->
-      </div>
+      </div>   <!--end of trackPlayer2-->
     
-
-
-
-
     </div>
   </div>
   <!-- Reset button -->
+  <div>
+      <form>
+          <button id='restart' type="reset" value="reset"> Restart? </button>
+      </form>
+  </div>
+
+
+
+
+
 </body>
 </html>
