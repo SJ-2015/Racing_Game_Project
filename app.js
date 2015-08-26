@@ -11,7 +11,7 @@ var winner;
    
 $(document).ready(function() {
    
-   //Setting up the players via css classes 
+   //Setting up the players via css classes ==> can be converted into OOP, as render character 
    $('#sendPlayer1').on('click', function(e) {
                   //get player avatar
           var player1Avatar=document.getElementById('field1').value;
@@ -41,7 +41,7 @@ $(document).ready(function() {
           }
     });
 
-          //moving the characters
+          //moving the characters ==> can be converted to method within character object, as this.move
     $(document).on('keypress',function(e){  
         var key =e.which;
 

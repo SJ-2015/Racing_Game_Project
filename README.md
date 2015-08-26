@@ -17,9 +17,19 @@ This file is where you will document your project.
 
 ### Technologies Used
 *What technologies did you use while developing this project?*
+- Use form / get value as covered in class to allow for character selection
+- use Jquery event listeners to listen for  key press and click and act accordingly
+- Use css class add and remove to allow movement
 
 ###Existing features
 *What features does your new racing app have?*
+- ability to choose different characters
+- Gif and theme background
+- ability to reset the game and start over
 
 ###Planned features
 *What changes would you make to your project if you continued with it in the future?*
+Coding Change:
+1. I layed out the OOP structure and was plan to refactor the code into OOP once the non-oop code works but ran out of time. If time allowed, I would refactor the code to almost entirely OOP 
+2. I would add the score tallying up feature
+3. I would make the page look better
